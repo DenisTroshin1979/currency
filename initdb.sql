@@ -1,0 +1,15 @@
+CREATE DATABASE IF NOT EXISTS currency;
+
+USE currency;
+
+CREATE TABLE IF NOT EXISTS users 
+(
+ id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+ login  VARCHAR(20) NOT NULL,
+ password VARCHAR(255) NOT NULL
+);
+
+INSERT INTO users VALUES (NULL, 'denis', '$2y$10$6Pru7wDcyy2Ivf9NjRbhQO/IgFZx7UEcxhkg9Uup7P5yVBJYAd4su');
+INSERT INTO users VALUES (NULL, 'alex',  '$2y$10$6Pru7wDcyy2Ivf9NjRbhQO/IgFZx7UEcxhkg9Uup7P5yVBJYAd4su');
+INSERT INTO users VALUES (NULL, 'nick',  '$2y$10$6Pru7wDcyy2Ivf9NjRbhQO/IgFZx7UEcxhkg9Uup7P5yVBJYAd4su');
+INSERT INTO users VALUES (NULL, 'mary',  '$2y$10$6Pru7wDcyy2Ivf9NjRbhQO/IgFZx7UEcxhkg9Uup7P5yVBJYAd4su');
